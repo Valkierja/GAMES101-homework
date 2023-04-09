@@ -1,21 +1,6 @@
-#include <cmath>
-#include <eigen3/Eigen/Core>
-#include <eigen3/Eigen/Dense>
-#include <iostream>
-#define fPoint2D Eigen::Matrix<float, 3, 1>
-#define fdeg2rad(theta) theta / 180.0 * acos(-1)
-#define fScale2D(x, y) Eigen::Matrix<float, 3, 3>(x, 0, 0, \
-                                                  0, y, 0, \
-                                                  0, 0, 1)
-#define fRotate2D(theta) Eigen::Matrix<float, 3, 3>(cos(fdeg2rad(theta)), -sin(fdeg2rad(theta)), 0, \
-                                                    sin(fdeg2rad(theta)), cos(fdeg2rad(theta)), 0,  \
-                                                    0, 0, 1)
-#define fTranslation2D(x, y) Eigen::Matrix<float, 3, 3>(1, 0, x, \
-                                                        0, 1, y, \
-                                                        0, 0, 1)
+#include "myUtility.h"
 
-void example()
-{
+void example() {
     // Basic Example of cpp
     std::cout << "Example of cpp \n";
     float a = 1.0, b = 2.0;
@@ -57,14 +42,21 @@ void example()
 
     // 示例
 }
-void homework_0()
-{
 
-    
+void homework_0() {
+    auto point = fPoint2D(2.0f, 1.0f, 1.0f);
+
+    //error
+    //auto myT2 = Eigen::Matrix<float, 3, 3>(1.0f, 0.0f, 1.0f, 0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 1.0f);
+
+    auto myTranslation = fTranslation2D(1, 2);
+    auto myrotate = fRotate2D(45.0);
+    auto result = myTranslation * myrotate * point;
+    std::cout<<result;
 }
 
-int main()
-{
-    example();
+int main() {
+//    example();
+    homework_0();
     return 0;
 }
