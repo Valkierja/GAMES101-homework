@@ -1,0 +1,3 @@
+/home/cs18/graphic/build/CMakeFiles/rebuild_cache.dir
+/home/cs18/graphic/build/CMakeFiles/Transformation.dir
+/home/cs18/graphic/build/CMakeFiles/edit_cache.dir
