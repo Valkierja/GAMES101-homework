@@ -13,15 +13,8 @@
 #define fTranslation2D(x, y) Eigen::Matrix<float, 3, 3>(1, 0, x, \
                                                         0, 1, y, \
                                                         0, 0, 1)
-
-void homework_0()
+void example()
 {
-    fPoint2D Point_P(2, 1, 1);
-}
-
-int main()
-{
-
     // Basic Example of cpp
     std::cout << "Example of cpp \n";
     float a = 1.0, b = 2.0;
@@ -62,6 +55,14 @@ int main()
     // matrix multiply vector i * v
 
     // 示例
+}
+void homework_0()
+{
+    fPoint2D Point_P(2, 1, 1);
+}
 
+int main()
+{
+    example();
     return 0;
 }
