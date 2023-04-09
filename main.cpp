@@ -13,6 +13,7 @@
 #define fTranslation2D(x, y) Eigen::Matrix<float, 3, 3>(1, 0, x, \
                                                         0, 1, y, \
                                                         0, 0, 1)
+
 void example()
 {
     // Basic Example of cpp
@@ -58,7 +59,8 @@ void example()
 }
 void homework_0()
 {
-    fPoint2D Point_P(2, 1, 1);
+
+    
 }
 
 int main()
