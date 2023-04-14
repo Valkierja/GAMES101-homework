@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/cs18/graphic/build",
-  "command": "/usr/bin/c++   -I/home/cs18/graphic/EIGEN3_INCLUDE_DIR  -g   -o CMakeFiles/Transformation.dir/main.cpp.o -c /home/cs18/graphic/main.cpp",
-  "file": "/home/cs18/graphic/main.cpp"
-}
-]

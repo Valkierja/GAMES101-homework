@@ -10,7 +10,6 @@
 #include <eigen3/Eigen/Dense>
 #include <iostream>
 
-
 #define fPoint2D Eigen::Matrix<float, 3, 1>
 #define fDeg2Rad(theta) (theta / 180.0f * acos(-1))
 
