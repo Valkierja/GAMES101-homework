@@ -46,7 +46,7 @@ void example() {
 void homework_0() {
     auto point = fPoint2D(2.0f, 1.0f, 1.0f);
 
-    //error
+    //error: not support listize init more than 2x2 in C++11
     //auto myT2 = Eigen::Matrix<float, 3, 3>(1.0f, 0.0f, 1.0f, 0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 1.0f);
 
     auto myTranslation = fTranslation2D(1, 2);
