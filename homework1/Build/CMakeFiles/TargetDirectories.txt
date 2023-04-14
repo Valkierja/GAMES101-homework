@@ -1,0 +1,3 @@
+/home/cs18/graphic/homework1/Build/CMakeFiles/rebuild_cache.dir
+/home/cs18/graphic/homework1/Build/CMakeFiles/Rasterizer.dir
+/home/cs18/graphic/homework1/Build/CMakeFiles/edit_cache.dir
