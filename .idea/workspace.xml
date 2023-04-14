@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="Rasterizer" targetName="Rasterizer" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="287d2854-feb5-48fb-a824-0e5893cfb375" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file:///usr/local/include/eigen3/Eigen/Core" root0="SKIP_INSPECTION" />
+    <setting file="file:///usr/local/include/eigen3/Eigen/Dense" root0="SKIP_INSPECTION" />
+    <setting file="file:///usr/local/include/eigen3/Eigen/src/Core/Matrix.h" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OBS8okApR0u5mXKqYzwwRWoFrK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="false">
+    <layout>
+      <window_info id="Commit_Guest" />
+      <window_info id="Space Code Reviews" order="0" />
+      <window_info id="Bookmarks" order="1" side_tool="true" weight="0.1419271" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.1419271" />
+      <window_info id="Pull Requests" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.1419271" />
+      <window_info id="Commit" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.31490386" />
+      <window_info anchor="bottom" id="CMake" order="1" weight="0.33028847" />
+      <window_info anchor="bottom" id="Database Changes" order="2" />
+      <window_info anchor="bottom" id="TypeScript" order="3" />
+      <window_info active="true" anchor="bottom" id="TODO Exporter" order="4" visible="true" weight="0.33028847" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.33014113" />
+      <window_info anchor="bottom" id="Python Packages" order="6" weight="0.33028847" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.31971154" />
+      <window_info anchor="bottom" id="File Transfer" order="8" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.33028847" />
+      <window_info anchor="bottom" id="Problems View" order="10" weight="0.33028847" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33014113" />
+      <window_info anchor="bottom" id="Services" order="12" weight="0.33014113" />
+      <window_info anchor="bottom" id="Vcpkg" order="13" weight="0.33014113" />
+      <window_info anchor="bottom" id="clangd" order="14" />
+      <window_info anchor="right" id="Todo4me" order="0" weight="0.32994792" />
+      <window_info anchor="right" id="Database" order="1" />
+      <window_info anchor="right" id="make" order="2" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Notifications" order="3" weight="0.25036126" />
+    </layout>
+  </component>
+  <component name="RunManager">
+    <configuration name="Rasterizer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rasterizer" TARGET_NAME="Rasterizer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rasterizer" RUN_TARGET_NAME="Rasterizer">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="287d2854-feb5-48fb-a824-0e5893cfb375" name="Changes" comment="" />
+      <created>1681032326057</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681032326057</updated>
+      <workItem from="1681032327380" duration="7801000" />
+      <workItem from="1681456552476" duration="332000" />
+      <workItem from="1681457011750" duration="599000" />
+      <workItem from="1681459180665" duration="139000" />
+    </task>
+    <task id="LOCAL-00001" summary="framework set up">
+      <created>1681034151675</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681034151675</updated>
+    </task>
+    <task id="LOCAL-00002" summary="homework0 done">
+      <created>1681039157851</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681039157851</updated>
+    </task>
+    <task id="LOCAL-00003" summary="homework dir structure hieraki change; add homework1 file">
+      <created>1681454405395</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681454405395</updated>
+    </task>
+    <task id="LOCAL-00004" summary="homework dir structure hieraki change; add homework1 file">
+      <created>1681454454906</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681454454906</updated>
+    </task>
+    <task id="LOCAL-00005" summary="homework dir structure hieraki change; add homework1 file">
+      <created>1681454550555</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681454550555</updated>
+    </task>
+    <task id="LOCAL-00006" summary="homework dir structure hieraki change; add homework1 file">
+      <created>1681455361751</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681455361751</updated>
+    </task>
+    <task id="LOCAL-00007" summary="homework dir structure hieraki change; add homework1 file">
+      <created>1681459282430</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681459282430</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="framework set up" />
+    <MESSAGE value="homework0 done" />
+    <MESSAGE value="homework dir structure hieraki change; add homework1 file" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework dir structure hieraki change; add homework1 file" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
