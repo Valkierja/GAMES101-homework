@@ -20,7 +20,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="287d2854-feb5-48fb-a824-0e5893cfb375" name="Changes" comment="" />
+    <list default="true" id="287d2854-feb5-48fb-a824-0e5893cfb375" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,6 +105,11 @@
     </layout>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Rasterizer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rasterizer" TARGET_NAME="Rasterizer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rasterizer" RUN_TARGET_NAME="Rasterizer">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -120,7 +127,7 @@
       <workItem from="1681032327380" duration="7801000" />
       <workItem from="1681456552476" duration="332000" />
       <workItem from="1681457011750" duration="599000" />
-      <workItem from="1681459180665" duration="139000" />
+      <workItem from="1681459180665" duration="315000" />
     </task>
     <task id="LOCAL-00001" summary="framework set up">
       <created>1681034151675</created>
@@ -171,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681459282430</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="homework dir structure hieraki change; add homework1 file">
+      <created>1681459405822</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681459405822</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
