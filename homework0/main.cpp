@@ -52,7 +52,7 @@ void homework_0() {
     auto myTranslation = fTranslation2D(1, 2);
     auto myrotate = fRotate2D(45.0);
     auto result = myTranslation * myrotate * point;
-    std::cout<<result;
+    std::cout << result;
 }
 
 int main() {

@@ -11,7 +11,7 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
-      <config projectName="Rasterizer" targetName="Rasterizer" />
+      <config projectName="Test" targetName="Test" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -21,11 +21,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="287d2854-feb5-48fb-a824-0e5893cfb375" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/homework1/image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework1/Build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/homework1/Build/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework1/Build/CMakeFiles/Rasterizer.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/homework1/Build/CMakeFiles/Rasterizer.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework1/Build/Rasterizer" beforeDir="false" afterPath="$PROJECT_DIR$/homework1/Build/Rasterizer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework1/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/homework1/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +44,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file:///usr/local/include/eigen3/Eigen/Core" root0="SKIP_INSPECTION" />
     <setting file="file:///usr/local/include/eigen3/Eigen/Dense" root0="SKIP_INSPECTION" />
+    <setting file="file:///usr/local/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h" root0="SKIP_INSPECTION" />
     <setting file="file:///usr/local/include/eigen3/Eigen/src/Core/Matrix.h" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProblemsViewState">
@@ -86,7 +87,7 @@
       <window_info id="Bookmarks" order="1" side_tool="true" weight="0.1419271" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.1419271" />
       <window_info id="Pull Requests" order="3" />
-      <window_info content_ui="combo" id="Project" order="4" weight="0.2838542" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.2841146" />
       <window_info id="Commit" order="5" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.31490386" />
       <window_info anchor="bottom" id="CMake" order="1" weight="0.33028847" />
@@ -97,12 +98,12 @@
       <window_info anchor="bottom" id="Python Packages" order="6" weight="0.33028847" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.31971154" />
       <window_info anchor="bottom" id="File Transfer" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.3277672" />
+      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.32740384" />
       <window_info anchor="bottom" id="Problems View" order="10" weight="0.33028847" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33028847" />
-      <window_info anchor="bottom" id="Services" order="12" weight="0.33014113" />
-      <window_info anchor="bottom" id="Vcpkg" order="13" weight="0.33014113" />
-      <window_info anchor="bottom" id="clangd" order="14" />
+      <window_info active="true" anchor="bottom" x="1004" y="694" width="916" height="346" id="Terminal" order="12" type="FLOATING" weight="0.33028847" />
+      <window_info anchor="bottom" id="Services" order="13" weight="0.33014113" />
+      <window_info anchor="bottom" id="Vcpkg" order="14" weight="0.33014113" />
+      <window_info anchor="bottom" id="clangd" order="15" />
       <window_info anchor="right" id="Todo4me" order="0" weight="0.32994792" />
       <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="right" id="make" order="2" show_stripe_button="false" side_tool="true" />
@@ -115,7 +116,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Rasterizer" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="−r 20 ./image.png" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rasterizer" TARGET_NAME="Rasterizer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rasterizer" RUN_TARGET_NAME="Rasterizer">
+    <configuration name="Test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test" TARGET_NAME="Test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Test" RUN_TARGET_NAME="Test">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -138,7 +139,7 @@
       <workItem from="1681456552476" duration="332000" />
       <workItem from="1681457011750" duration="599000" />
       <workItem from="1681459180665" duration="1581000" />
-      <workItem from="1681541692557" duration="2857000" />
+      <workItem from="1681541692557" duration="4453000" />
     </task>
     <task id="LOCAL-00001" summary="framework set up">
       <created>1681034151675</created>
@@ -203,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681544436976</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="homework1 done">
+      <created>1681547573023</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681547573023</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +229,8 @@
     <MESSAGE value="homework0 done" />
     <MESSAGE value="homework dir structure hieraki change; add homework1 file" />
     <MESSAGE value="homework1 get_model_matrix() added, test project added" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework1 get_model_matrix() added, test project added" />
+    <MESSAGE value="homework1 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework1 done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

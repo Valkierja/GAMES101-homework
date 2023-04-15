@@ -7,6 +7,21 @@
 constexpr double MY_PI = 3.1415926;
 #define fDeg2Rad(theta) (theta / 180.0f *MY_PI)
 
+Eigen::Matrix2f normalize(Eigen::Matrix2f input) {
+    if (input(3) != 0) return Eigen::Matrix2f::Zero();
+    float mag = sqrt(input(0) * input(0) + input(1) * input(1) + input(2) * input(2));
+
+    input(0) /= mag;
+    input(1) /= mag;
+    input(2) /= mag;
+
+    std::cout << mag << std::endl;
+    std::cout << input << std::endl;
+    std::cout << input(0) * input(0) + input(1) * input(1) + input(2) * input(2) << std::endl;
+
+    return input;
+
+}
 
 Eigen::Matrix4f get_view_matrix(Eigen::Vector3f eye_pos) {
     Eigen::Matrix4f view = Eigen::Matrix4f::Identity();
@@ -61,11 +76,11 @@ Eigen::Matrix4f get_projection_matrix(float eye_fov, float aspect_ratio,
             0, zNear, 0, 0,
             0, 0, zNear + zFar, -zNear * zFar,
             0, 0, 1, 0;
-    ortho_translate <<  1, 0, 0, -(xRight + xLeft) / 2,
-                        0, 1, 0, -(yTop + yBottom) / 2,
-                        0, 0, 1, -(zNear + zFar) / 2,
-                        0, 0, 0, 1;
-    ortho_scale << 2 / (xRight- xLeft), 0, 0, 0,
+    ortho_translate << 1, 0, 0, -(xRight + xLeft) / 2,
+            0, 1, 0, -(yTop + yBottom) / 2,
+            0, 0, 1, -(zNear + zFar) / 2,
+            0, 0, 0, 1;
+    ortho_scale << 2 / (xRight - xLeft), 0, 0, 0,
             0, 2 / (yTop - yBottom), 0, 0,
             0, 0, 2 / (zNear - zFar), 0,
             0, 0, 0, 1;
