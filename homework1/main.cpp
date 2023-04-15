@@ -4,9 +4,9 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
 
-#define fDeg2Rad(theta) (theta / 180.0f * acos(-1))
-
 constexpr double MY_PI = 3.1415926;
+#define fDeg2Rad(theta) (theta / 180.0f *MY_PI)
+
 
 Eigen::Matrix4f get_view_matrix(Eigen::Vector3f eye_pos) {
     Eigen::Matrix4f view = Eigen::Matrix4f::Identity();
@@ -28,13 +28,13 @@ Eigen::Matrix4f get_model_matrix(float rotation_angle) {
     // TODO: Implement this function
     // Create the model matrix for rotating the triangle around the Z axis.
     // Then return it.
-    Eigen::Matrix4f translate;
-    translate << cos(rotation_angle), -sin(rotation_angle), 0, 0,
-            sin(rotation_angle), cos(rotation_angle), 0, 0,
+
+    float rad_angle = fDeg2Rad(rotation_angle);
+    model << cos(rad_angle), -sin(rad_angle), 0, 0,
+            sin(rad_angle), cos(rad_angle), 0, 0,
             0, 0, 1, 0,
             0, 0, 0, 1;
 
-    model = translate * model;
 
     return model;
 }
@@ -48,6 +48,28 @@ Eigen::Matrix4f get_projection_matrix(float eye_fov, float aspect_ratio,
     // TODO: Implement this function
     // Create the projection matrix for the given parameters.
     // Then return it.
+    Eigen::Matrix4f persp2ortho;
+    Eigen::Matrix4f ortho_translate;
+    Eigen::Matrix4f ortho_scale;
+    float yTop = tan(fDeg2Rad(eye_fov) / 2) * abs(zNear);
+    float yBottom = -yTop;
+    float xRight = aspect_ratio * yTop;
+    float xLeft = -xRight;
+
+
+    persp2ortho << zNear, 0, 0, 0,
+            0, zNear, 0, 0,
+            0, 0, zNear + zFar, -zNear * zFar,
+            0, 0, 1, 0;
+    ortho_translate <<  1, 0, 0, -(xRight + xLeft) / 2,
+                        0, 1, 0, -(yTop + yBottom) / 2,
+                        0, 0, 1, -(zNear + zFar) / 2,
+                        0, 0, 0, 1;
+    ortho_scale << 2 / (xRight- xLeft), 0, 0, 0,
+            0, 2 / (yTop - yBottom), 0, 0,
+            0, 0, 2 / (zNear - zFar), 0,
+            0, 0, 0, 1;
+    projection = ortho_scale * ortho_translate * persp2ortho * projection;
 
     return projection;
 }

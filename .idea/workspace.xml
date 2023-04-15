@@ -21,9 +21,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="287d2854-feb5-48fb-a824-0e5893cfb375" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework1/Build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/homework1/Build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework1/Build/CMakeFiles/Rasterizer.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/homework1/Build/CMakeFiles/Rasterizer.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework1/Build/Rasterizer" beforeDir="false" afterPath="$PROJECT_DIR$/homework1/Build/Rasterizer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homework1/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/homework1/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +86,7 @@
       <window_info id="Bookmarks" order="1" side_tool="true" weight="0.1419271" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.1419271" />
       <window_info id="Pull Requests" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.1419271" />
+      <window_info content_ui="combo" id="Project" order="4" weight="0.2838542" />
       <window_info id="Commit" order="5" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.31490386" />
       <window_info anchor="bottom" id="CMake" order="1" weight="0.33028847" />
@@ -96,7 +97,7 @@
       <window_info anchor="bottom" id="Python Packages" order="6" weight="0.33028847" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.31971154" />
       <window_info anchor="bottom" id="File Transfer" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.33028847" />
+      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.3277672" />
       <window_info anchor="bottom" id="Problems View" order="10" weight="0.33028847" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.33028847" />
       <window_info anchor="bottom" id="Services" order="12" weight="0.33014113" />
@@ -114,7 +115,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Rasterizer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rasterizer" TARGET_NAME="Rasterizer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rasterizer" RUN_TARGET_NAME="Rasterizer">
+    <configuration name="Rasterizer" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="−r 20 ./image.png" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rasterizer" TARGET_NAME="Rasterizer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rasterizer" RUN_TARGET_NAME="Rasterizer">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -137,7 +138,7 @@
       <workItem from="1681456552476" duration="332000" />
       <workItem from="1681457011750" duration="599000" />
       <workItem from="1681459180665" duration="1581000" />
-      <workItem from="1681541692557" duration="1403000" />
+      <workItem from="1681541692557" duration="2857000" />
     </task>
     <task id="LOCAL-00001" summary="framework set up">
       <created>1681034151675</created>
@@ -195,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681459405822</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="homework1 get_model_matrix() added, test project added">
+      <created>1681544436976</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681544436976</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +220,8 @@
     <MESSAGE value="framework set up" />
     <MESSAGE value="homework0 done" />
     <MESSAGE value="homework dir structure hieraki change; add homework1 file" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework dir structure hieraki change; add homework1 file" />
+    <MESSAGE value="homework1 get_model_matrix() added, test project added" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework1 get_model_matrix() added, test project added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
