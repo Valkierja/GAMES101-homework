@@ -7,6 +7,10 @@
 
 constexpr double MY_PI = 3.1415926;
 Eigen::Matrix<float, 3, 1> zAxis(0.0, 0.0, 1.0);
+Eigen::Matrix<float, 3, 1> xAxis(1.0, 0.0, 0.0);
+Eigen::Matrix<float, 3, 1> yAxis(0.0, 1.0, 0.0);
+
+
 #define fDeg2Rad(theta) (theta / 180.0f *MY_PI)
 
 Eigen::Vector4f normalize(Eigen::Vector4f input) {
@@ -117,7 +121,8 @@ Eigen::Matrix4f get_rotation(Eigen::Matrix<float, 3, 1> axis, float angle) {
             -axis(1), axis(0), 0;
 
     Eigen::Matrix4f result = Eigen::Matrix4f::Zero();
-    result.topLeftCorner<3, 3>() = (cos(rad) * identity) + ((1 - cos(rad)) * axis * normalized_axisT) + sin(rad) * N;
+    result.topLeftCorner<3, 3>() =
+            (cos(rad) * identity) + ((1 - cos(rad)) * axis * normalized_axisT) + sin(rad) * N;//罗格迪斯旋转公式
     result(15) = 1;
     return result;
 }
