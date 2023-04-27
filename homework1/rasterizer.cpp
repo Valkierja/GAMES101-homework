@@ -176,9 +176,9 @@ void rst::rasterizer::clear(rst::Buffers buff) {
     }
 }
 
-rst::rasterizer::rasterizer(int w, int h) : width(w), height(h) {
-    frame_buf.resize(w * h);
-    depth_buf.resize(w * h);
+rst::rasterizer::rasterizer(int w, int h) : width(w), height(h) {//构造函数 设置画布大小
+    frame_buf.resize(w * h);//设置每帧缓冲区大小
+    depth_buf.resize(w * h);//设置深度信息所需存储空间
 }
 
 int rst::rasterizer::get_index(int x, int y) {

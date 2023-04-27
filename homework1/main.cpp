@@ -3,12 +3,30 @@
 #include <eigen3/Eigen/Eigen>
 #include <iostream>
 #include <opencv2/opencv.hpp>
+#include <utility>
 
 constexpr double MY_PI = 3.1415926;
+Eigen::Matrix<float, 3, 1> zAxis(0.0, 0.0, 1.0);
 #define fDeg2Rad(theta) (theta / 180.0f *MY_PI)
 
-Eigen::Matrix2f normalize(Eigen::Matrix2f input) {
-    if (input(3) != 0) return Eigen::Matrix2f::Zero();
+Eigen::Vector4f normalize(Eigen::Vector4f input) {
+//    if (input(3) != 0) return Eigen::Vector4f::Zero();
+    float mag = sqrt(input(0) * input(0) + input(1) * input(1) + input(2) * input(2));
+
+    input(0) /= mag;
+    input(1) /= mag;
+    input(2) /= mag;
+
+    std::cout << mag << std::endl;
+    std::cout << input << std::endl;
+    std::cout << input(0) * input(0) + input(1) * input(1) + input(2) * input(2) << std::endl;
+
+    return input;
+
+}
+
+Eigen::Vector3f normalize(Eigen::Vector3f input) {
+//    if (input(3) != 0) return Eigen::Vector3f::Zero();
     float mag = sqrt(input(0) * input(0) + input(1) * input(1) + input(2) * input(2));
 
     input(0) /= mag;
@@ -89,6 +107,21 @@ Eigen::Matrix4f get_projection_matrix(float eye_fov, float aspect_ratio,
     return projection;
 }
 
+Eigen::Matrix4f get_rotation(Eigen::Matrix<float, 3, 1> axis, float angle) {
+    auto normalized_axisT = axis.transpose();
+    auto identity = Matrix3f::Identity();
+    float rad = fDeg2Rad(angle);
+    Eigen::Matrix3f N;
+    N << 0, -axis(2), axis(1),
+            axis(2), 0, -axis(0),
+            -axis(1), axis(0), 0;
+
+    Eigen::Matrix4f result = Eigen::Matrix4f::Zero();
+    result.topLeftCorner<3, 3>() = (cos(rad) * identity) + ((1 - cos(rad)) * axis * normalized_axisT) + sin(rad) * N;
+    result(15) = 1;
+    return result;
+}
+
 int main(int argc, const char **argv) {
     float angle = 0;
     bool command_line = false;
@@ -122,7 +155,8 @@ int main(int argc, const char **argv) {
     if (command_line) {
         r.clear(rst::Buffers::Color | rst::Buffers::Depth);
 
-        r.set_model(get_model_matrix(angle));
+//        r.set_model(get_model_matrix(angle));
+        r.set_model(get_rotation(zAxis, angle));
         r.set_view(get_view_matrix(eye_pos));
         r.set_projection(get_projection_matrix(45, 1, 0.1, 50));
 
@@ -138,7 +172,8 @@ int main(int argc, const char **argv) {
     while (key != 27) {
         r.clear(rst::Buffers::Color | rst::Buffers::Depth);
 
-        r.set_model(get_model_matrix(angle));
+//        r.set_model(get_model_matrix(angle));
+        r.set_model(get_rotation(zAxis, angle));
         r.set_view(get_view_matrix(eye_pos));
         r.set_projection(get_projection_matrix(45, 1, 0.1, 50));
 
